@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>未来へのシグナル - TextAlive App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>未来へのシグナル</h1>
+      <div class="player-controls">
+        <button id="play" class="control-btn">再生</button>
+        <button id="pause" class="control-btn">一時停止</button>
+        <button id="stop" class="control-btn">停止</button>
+      </div>
+    </div>
+    
+    <div class="main-content">
+      <div class="visualizer-container">
+        <div id="visualizer" class="visualizer"></div>
+      </div>
+      
+      <div class="lyrics-container">
+        <div id="lyrics" class="lyrics"></div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Created with <a href="https://developer.textalive.jp/" target="_blank">TextAlive App API</a></p>
+      <p>マジカルミライ プログラミングコンテスト</p>
+    </div>
+  </div>
+
+  <!-- TextAlive App API -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/textalive-app-api/dist/index.js"></script>
+  
+  <!-- アプリケーションのスクリプト -->
+  <script src="js/main.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/optimize.js"></script>
+</body>
+</html>
